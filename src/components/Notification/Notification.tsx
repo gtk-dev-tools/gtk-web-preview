@@ -14,8 +14,8 @@ const Notification: SFC<ComponentProps> = ({ title, message, icon }) => (
                 <img src={icon} />
             </div>
             <div className="notification-content">
-                <p className="message-title">{title}</p>
-                <p>{message}</p>
+                <p className="message-title headline">{title}</p>
+                <p className="message-content">{message}</p>
             </div>
             <div className="notification-close" onClick={e => notification && notification.classList.add('closed')}></div>
         </div>

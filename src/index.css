@@ -119,3 +119,12 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.panel-button {
+    cursor: default;
+}
+
+.notification-banner .message-content {
+    min-height: 0;
+    padding: 0;
+}
