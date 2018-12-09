@@ -51,3 +51,35 @@ body {
     width: 100%;
     padding-left: 5px;
 }
+
+.notification-banner {
+    position: absolute;
+    left: calc(50vw - 17em);
+    transform: translateY(0);
+    transition-property: transform;
+}
+
+.notification-banner > div {
+    display: flex;
+    padding: 0px 5px;
+}
+
+.notification-banner img {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+}
+
+.notification-banner .notification-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjRkZGRkZGIiBvcGFjaXR5PSIwLjc1Ij4gIDxwYXRoIGQ9Ik0gMTcsOC40MSAxNS41OSw3IDEyLDEwLjU5IDguNDEsNyA3LDguNDEgMTAuNTksMTIgNywxNS41OSA4LjQxLDE3IDEyLDEzLjQxIDE1LjU5LDE3IDE3LDE1LjU5IDEzLjQxLDEyIFoiLz48L3N2Zz4=);
+    background-size: cover;
+    width: 22px;
+    height: 22px;
+}
+
+.notification-banner.closed {
+    transform: translateY(-150%);
+}
