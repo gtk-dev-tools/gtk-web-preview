@@ -23,13 +23,15 @@ class App extends Component {
           icon='https://i1.sndcdn.com/artworks-000316902936-95dw19-t500x500.jpg'
         />
 
-        <div className="dashtodockContainer bottom">
-          <div id="dash">
-            <div className="dash-item-container">
-              <div className="placeholder"></div>
-            </div>
-            <div className="dash-item-container">
-              <img src={KDEApp} />
+        <div className="hacky-container-for-dock">
+          <div id="dashtodockContainer" className="bottom">
+            <div id="dash">
+              <div className="dash-item-container">
+                <div className="placeholder"></div>
+              </div>
+              <div className="dash-item-container">
+                <img src={KDEApp} />
+              </div>
             </div>
           </div>
         </div>

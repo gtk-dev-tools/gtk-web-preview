@@ -84,20 +84,17 @@ body {
     transform: translateY(-150%);
 }
 
-.dashtodockContainer.bottom {
-    position: absolute;
-    bottom: 0;
-    left: 12.5vw;
-    width: 75vw;
+#dashtodockContainer.bottom {
+    width: auto;
 }
 
-.dashtodockContainer.bottom .placeholder {
+#dashtodockContainer.bottom .placeholder {
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
 }
 
-.dashtodockContainer.bottom .dash-item-container {
+#dashtodockContainer.bottom .dash-item-container {
     padding: 10px;
 }
 
@@ -109,7 +106,16 @@ body {
     display: flex;
 }
 
-.dashtodockContainer.bottom .dash-item-container {
+#dashtodockContainer.bottom .dash-item-container {
     display: flex;
     align-items: center;
+}
+
+.hacky-container-for-dock {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
 }
