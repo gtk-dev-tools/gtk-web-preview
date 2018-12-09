@@ -6,6 +6,8 @@ import PanelCenter from './components/Panel/PanelCenter/PanelCenter';
 import PanelRight from './components/Panel/PanelRight/PanelRight';
 import Notification from './components/Notification/Notification';
 
+import KDEApp from './assets/icons/breeze/apps/48/kdeapp.svg';
+
 class App extends Component {
   render() {
     return (
@@ -20,6 +22,17 @@ class App extends Component {
           message="Moe Shop - Moe Moe"
           icon='https://i1.sndcdn.com/artworks-000316902936-95dw19-t500x500.jpg'
         />
+
+        <div className="dashtodockContainer bottom">
+          <div id="dash">
+            <div className="dash-item-container">
+              <div className="placeholder"></div>
+            </div>
+            <div className="dash-item-container">
+              <img src={KDEApp} />
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
