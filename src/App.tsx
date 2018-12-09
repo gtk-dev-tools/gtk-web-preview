@@ -7,6 +7,7 @@ import PanelRight from './components/Panel/PanelRight/PanelRight';
 import Notification from './components/Notification/Notification';
 
 import KDEApp from './assets/icons/breeze/apps/48/kdeapp.svg';
+import Dock from './components/Dock/Dock';
 
 class App extends Component {
   render() {
@@ -23,18 +24,10 @@ class App extends Component {
           icon='https://i.ytimg.com/vi/ZCKpzP5SGYw/hqdefault.jpg'
         />
 
-        <div className="hacky-container-for-dock">
-          <div id="dashtodockContainer" className="bottom">
-            <div id="dash">
-              <div className="dash-item-container">
-                <div className="placeholder"></div>
-              </div>
-              <div className="dash-item-container">
-                <img src={KDEApp} />
-              </div>
-            </div>
-          </div>
-        </div>
+        <Dock applications={[
+          { placeholder: true, icon: '' }, // This is not a proper representation of the dock but renders fine.
+          { placeholder: false, icon: KDEApp }
+        ]} />
       </div>
     );
   }
