@@ -18,9 +18,9 @@ class App extends Component {
           <PanelRight />
         </Panel>
         <Notification
-          title="Virtual"
-          message="Moe Shop - Moe Moe"
-          icon='https://i1.sndcdn.com/artworks-000316902936-95dw19-t500x500.jpg'
+          title="Girl in the fire"
+          message="Pendulum - Hold your colour"
+          icon='https://i.ytimg.com/vi/ZCKpzP5SGYw/hqdefault.jpg'
         />
 
         <div className="hacky-container-for-dock">

@@ -1,3 +1,8 @@
+# Screenshots
+Expect these to change often during development, but currently a dumb  version of Gnome shell renders (Dash to dock too)
+
+![Screenshot of build at December 9th 2018](screenshots/screenshot.png)
+
 # Goals
 * Have a frontend where anyone can drop a theme (zip or css potentially) and it renders it entirely client side so you can preview the theme before using it
 * Hopefully modularise this so other linux DE's are supported
