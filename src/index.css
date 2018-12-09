@@ -48,7 +48,7 @@ body {
 
 .panel > #panelRight > img {
     height: 18px;
-    width: 100%;
+    max-width: 100%;
     padding-left: 5px;
 }
 
