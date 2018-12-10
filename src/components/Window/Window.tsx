@@ -6,6 +6,9 @@ const Window: SFC = (props) => (
             <div className="title">Hello</div>
             <div className="subtitle">World</div>
         </headerbar>
+        <div className="background">
+            Hello
+        </div>
     </window>
 );
 

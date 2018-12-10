@@ -132,12 +132,13 @@ body {
 }
 
 window {
-    min-width: 800px;
-    min-height: 600px;
-    display: block;
+    width: 800px;
+    height: 600px;
     position: absolute;
     left: calc(50vw - 400px);
     top: 150px;
+    display: flex;
+    flex-direction: column;
 }
 
 headerbar.titlebar {
@@ -150,5 +151,10 @@ headerbar.titlebar {
 
 headerbar.titlebar .title, headerbar.titlebar .subtitle {
     width: 100%;
+}
+
+window > div.background {
+    display: block;
+    height: 100%;
 }
 
