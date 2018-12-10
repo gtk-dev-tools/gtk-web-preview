@@ -1,11 +1,14 @@
 import React, { SFC } from 'react';
+import Headerbar from './Headerbar/Headerbar';
 
-const Window: SFC = (props) => (
+interface ComponentProps {
+    title: string;
+    subtitle?: string;
+}
+
+const Window: SFC<ComponentProps> = (props) => (
     <window className="csd solid-csd">
-        <headerbar className="titlebar default-decoration">
-            <div className="title">Hello</div>
-            <div className="subtitle">World</div>
-        </headerbar>
+        <Headerbar title={props.title} subtitle={props.subtitle} />
         <div className="background">
             Hello
         </div>
