@@ -137,8 +137,14 @@ window {
     position: absolute;
     left: calc(50vw - 400px);
     top: 150px;
+}
+
+window > decoration {
     display: flex;
     flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
 }
 
 headerbar.titlebar {
@@ -153,7 +159,7 @@ headerbar.titlebar .title, headerbar.titlebar .subtitle {
     width: 100%;
 }
 
-window > div.background {
+window > decoration > div.background {
     display: block;
     height: 100%;
 }

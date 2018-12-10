@@ -64,5 +64,6 @@ declare namespace JSX {
       window: any;
       headerbar: any;
       separator: any;
+      decoration: any;
   }
 }

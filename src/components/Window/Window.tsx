@@ -8,10 +8,12 @@ interface ComponentProps {
 
 const Window: SFC<ComponentProps> = (props) => (
     <window className="csd solid-csd">
-        <Headerbar title={props.title} subtitle={props.subtitle} />
-        <div className="background">
-            Hello
-        </div>
+        <decoration>
+            <Headerbar title={props.title} subtitle={props.subtitle} />
+            <div className="background">
+                Hello
+            </div>
+        </decoration>
     </window>
 );
 
