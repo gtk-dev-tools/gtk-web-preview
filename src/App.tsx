@@ -8,6 +8,7 @@ import Notification from './components/Notification/Notification';
 
 import KDEApp from './assets/icons/breeze/apps/48/kdeapp.svg';
 import Dock from './components/Dock/Dock';
+import Window from './components/Window/Window';
 
 class App extends Component {
   render() {
@@ -23,6 +24,8 @@ class App extends Component {
           message="Pendulum - Hold your colour"
           icon='https://i.ytimg.com/vi/ZCKpzP5SGYw/hqdefault.jpg'
         />
+
+        <Window />
 
         <Dock applications={[
           { placeholder: true, icon: '' }, // This is not a proper representation of the dock but renders fine.

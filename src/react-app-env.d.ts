@@ -57,3 +57,12 @@ declare module '*.module.sass' {
   const classes: { [key: string]: string };
   export default classes;
 }
+
+
+declare namespace JSX {
+  interface IntrinsicElements {
+      window: any;
+      headerbar: any;
+      separator: any;
+  }
+}
