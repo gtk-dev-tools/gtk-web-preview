@@ -25,7 +25,7 @@ class App extends Component {
           icon='https://i.ytimg.com/vi/ZCKpzP5SGYw/hqdefault.jpg'
         />
 
-        <Window />
+        <Window title="Hello" subtitle="World" />
 
         <Dock applications={[
           { placeholder: true, icon: '' }, // This is not a proper representation of the dock but renders fine.
