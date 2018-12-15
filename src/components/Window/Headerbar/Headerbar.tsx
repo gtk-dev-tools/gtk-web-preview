@@ -6,10 +6,14 @@ interface ComponentProps {
 }
 
 const Headerbar: SFC<ComponentProps> = ({ title, subtitle }) => 
-    <headerbar className="titlebar default-decoration">
-        <div className="title">{title}</div>
-        {subtitle != null && <div className="subtitle">{subtitle}</div>}
-    </headerbar>;
+    <paned className="horizontal titlebar" name="titlebar_paned">
+        <headerbar name="headerbar">
+            <box className="vertical">
+                <label className="title">{title}</label>
+                {subtitle != null && <label className="subtitle">{subtitle}</label>}
+            </box>
+        </headerbar>
+    </paned>;
 
 export default Headerbar;
 

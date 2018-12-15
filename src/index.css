@@ -139,7 +139,7 @@ window {
     top: 150px;
 }
 
-window > decoration {
+window > decoration, window > overlay {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -147,7 +147,7 @@ window > decoration {
     padding: 0 !important;
 }
 
-headerbar.titlebar {
+headerbar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -155,12 +155,21 @@ headerbar.titlebar {
     flex-wrap: wrap;
 }
 
-headerbar.titlebar .title, headerbar.titlebar .subtitle {
+headerbar .title, headerbar .subtitle {
     width: 100%;
 }
 
-window > decoration > div.background {
+window > decoration, window > overlay > div.background {
     display: block;
     height: 100%;
 }
 
+.vertical {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+paned[name="vpaned"] {
+    background: white;
+}

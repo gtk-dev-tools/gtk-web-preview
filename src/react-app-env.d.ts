@@ -2,6 +2,12 @@
 /// <reference types="react" />
 /// <reference types="react-dom" />
 
+type GTKProps = {
+  className?: string;
+  children?: any[] | Element | any;
+  name?: string;
+};
+
 declare namespace NodeJS {
   interface ProcessEnv {
     NODE_ENV: 'development' | 'production' | 'test'
@@ -61,9 +67,12 @@ declare module '*.module.sass' {
 
 declare namespace JSX {
   interface IntrinsicElements {
-      window: any;
-      headerbar: any;
-      separator: any;
-      decoration: any;
+      window: GTKProps;
+      headerbar: GTKProps;
+      separator: GTKProps;
+      decoration: GTKProps;
+      box: GTKProps;
+      paned: GTKProps;
+      overlay: GTKProps;
   }
 }
